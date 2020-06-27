@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SelectPatientActivity">
+
+
+    <TextView
+        android:id="@+id/reference_id_label"
+        android:layout_width="306sp"
+        android:layout_height="65sp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="53sp"
+        android:layout_marginTop="125sp"
+        android:text="Patient Reference ID"
+        android:textColor="@color/logo_blue"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/reference_id"
+        android:layout_width="294sp"
+        android:layout_height="61sp"
+        android:layout_below="@+id/reference_id_label"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="58sp"
+        android:ems="10"
+        android:hint="Enter Reference ID"
+        android:text=""
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/getPatient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/reference_id"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="223dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="46dp"
+        android:background="@color/logo_blue"
+        android:text="Search"
+        android:textColor="@color/logo_white"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/newPatient"
+        android:layout_width="150sp"
+        android:layout_height="50sp"
+        android:layout_below="@+id/reference_id"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="124sp"
+        android:layout_marginTop="181sp"
+        android:background="@color/logo_blue"
+        android:text="New Patient"
+        android:textColor="@color/logo_white"
+        android:textSize="20sp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="200sp"
+        android:layout_height="200sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="75sp"
+        android:layout_marginTop="191sp"
+        android:layout_marginEnd="108sp"
+        android:visibility="invisible" />
+
+
+</RelativeLayout>

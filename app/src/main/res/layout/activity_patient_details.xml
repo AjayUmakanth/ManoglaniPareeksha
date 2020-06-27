@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PatientDetailsActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40sp"
+                android:layout_marginTop="25sp"
+                android:layout_marginEnd="40sp"
+                android:layout_marginBottom="40sp"
+                android:textColor="@color/logo_blue"
+                android:text="@string/patient_details"
+                android:textSize="40sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="65sp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/refLabel"
+                android:layout_width="100sp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:textColor="@color/logo_blue"
+                android:layout_marginStart="10sp"
+                android:text="Ref. ID"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/ref"
+                android:layout_width="240sp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:ems="10"
+                android:hint="@string/prompt_name"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="65sp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/nameLabel"
+                android:layout_width="100sp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text="@string/nameLabel"
+                android:textColor="@color/logo_blue"
+                android:layout_marginStart="10sp"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="240sp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:ems="10"
+                android:hint="@string/prompt_name"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="65sp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/ageLabel"
+                android:layout_width="100sp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text="@string/ageLabel"
+                android:textColor="@color/logo_blue"
+                android:layout_marginStart="10sp"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/age"
+                android:layout_width="240sp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:ems="10"
+                android:hint="@string/prompt_age"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="65sp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/genderLabel"
+                android:layout_width="100sp"
+                android:layout_height="match_parent"
+                android:text="@string/genderLabel"
+                android:layout_weight="2"
+                android:layout_marginStart="10sp"
+                android:textColor="@color/logo_blue"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/gender"
+                android:layout_width="240sp"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:hint="@string/prompt_age"
+                android:layout_weight="3"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="65sp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/phoneLabel"
+                android:layout_width="100sp"
+                android:layout_height="match_parent"
+                android:text="@string/phoneLabel"
+                android:textColor="@color/logo_blue"
+                android:layout_marginStart="10sp"
+                android:layout_weight="2"
+                android:textSize="25sp" />
+            <TextView
+                android:id="@+id/phone"
+                android:layout_width="240sp"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:hint="@string/prompt_phone"
+                android:layout_weight="3"
+                android:textSize="25sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="65sp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/emailLabel"
+                android:layout_width="100sp"
+                android:layout_height="match_parent"
+                android:text="@string/emailLabel"
+                android:textColor="@color/logo_blue"
+                android:layout_marginStart="10sp"
+                android:layout_weight="2"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="240sp"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:hint="@string/prompt_email"
+                android:layout_weight="3"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="65sp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/consultant_doctor_label"
+                android:layout_width="100sp"
+                android:layout_height="match_parent"
+                android:text="@string/doctorLabel"
+                android:textColor="@color/logo_blue"
+                android:layout_weight="2"
+                android:layout_marginStart="10sp"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/consultant_doctor"
+                android:layout_width="240sp"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:text="@string/prompt_name"
+                android:layout_weight="3"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80sp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/medicalHistoryLabel"
+                android:layout_width="100sp"
+                android:layout_height="match_parent"
+                android:text="@string/medicalHistoryLabel"
+                android:textColor="@color/logo_blue"
+                android:layout_weight="2"
+                android:layout_marginStart="10sp"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/medicalHistory"
+                android:layout_width="240sp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/prompt_medical_history"
+                android:layout_weight="3"
+                android:maxLines="5"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="120sp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@color/logo_blue"
+                android:textColor="@color/logo_white"
+                android:textSize="25sp"
+                android:layout_marginStart="150sp"
+                android:layout_marginTop="50sp"
+                android:layout_marginBottom="50sp"
+                android:text="Start" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

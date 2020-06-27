@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "192746930478",
+    "firebase_url": "https://manoglini-pareeksha-v1.firebaseio.com",
+    "project_id": "manoglini-pareeksha-v1",
+    "storage_bucket": "manoglini-pareeksha-v1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:192746930478:android:5d5cf1a76630d27638babf",
+        "android_client_info": {
+          "package_name": "com.example.manoglanipareeksha"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "192746930478-mrugi7ej6p0vce82d597q0r9i2j36kqj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.manoglanipareeksha",
+            "certificate_hash": "7d8aa793b21fe54779ab8a9ea862dffcbcb37f65"
+          }
+        },
+        {
+          "client_id": "192746930478-ep2gt7un7qg639km5jg9imkptkn6dgt6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIAxKxZ6twYnWO4ZbXy8m1aYtPG7n5yR0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "192746930478-ep2gt7un7qg639km5jg9imkptkn6dgt6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

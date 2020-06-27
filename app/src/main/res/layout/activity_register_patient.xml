@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterPatient">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="65sp"
+                android:layout_marginTop="25sp"
+                android:layout_marginEnd="65sp"
+                android:layout_marginBottom="25sp"
+                android:text="@string/enter_details"
+                android:textColor="@color/logo_blue"
+                android:textSize="40sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75sp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/nameLabel"
+                    android:layout_marginStart="10sp"
+                    android:layout_width="100sp"
+                    android:layout_height="50sp"
+                    android:layout_weight="2"
+                    android:text="@string/nameLabel"
+                    android:textColor="@color/logo_blue"
+                    android:textSize="25sp" />
+
+                <EditText
+                    android:id="@+id/name"
+                    android:layout_width="240sp"
+                    android:layout_height="50sp"
+                    android:layout_weight="3"
+                    android:layout_marginEnd="10sp"
+                    android:ems="10"
+                    android:hint="@string/prompt_name"
+                    android:inputType="textPersonName"
+                    android:textSize="25sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75sp">
+
+                <TextView
+                    android:id="@+id/dobLabel"
+                    android:layout_marginStart="10sp"
+                    android:layout_width="80sp"
+                    android:layout_height="50sp"
+                    android:text="@string/dobLabel"
+                    android:textColor="@color/logo_blue"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/dob"
+                    android:layout_width="120sp"
+                    android:layout_height="50sp"
+                    android:hint="--/--/----"
+                    android:ems="10"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/selectDob"
+                    android:layout_width="120sp"
+                    android:layout_height="40sp"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginBottom="50sp"
+                    android:background="@color/logo_blue"
+                    android:text="Select"
+                    android:textColor="@color/logo_white"
+                    android:textSize="25sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75sp">
+
+                <TextView
+                    android:id="@+id/genderLabel"
+                    android:layout_marginStart="10sp"
+                    android:layout_width="100sp"
+                    android:layout_height="50sp"
+                    android:layout_weight="2"
+                    android:text="@string/genderLabel"
+                    android:textColor="@color/logo_blue"
+                    android:textSize="25sp" />
+
+                <RadioGroup
+                    android:id="@+id/gender"
+                    android:layout_width="240sp"
+                    android:layout_height="50sp"
+                    android:layout_weight="3"
+                    android:layout_marginRight="10sp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/male"
+                        android:layout_width="120sp"
+                        android:layout_height="match_parent"
+                        android:text="@string/male" />
+
+                    <RadioButton
+                        android:id="@+id/female"
+                        android:layout_width="120sp"
+                        android:layout_height="match_parent"
+                        android:text="@string/female" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75sp">
+
+                <TextView
+                    android:id="@+id/phoneLabel"
+                    android:layout_marginStart="10sp"
+                    android:layout_width="100sp"
+                    android:layout_height="50sp"
+                    android:text="@string/phoneLabel"
+                    android:layout_weight="2"
+                    android:textColor="@color/logo_blue"
+                    android:textSize="25sp" />
+
+                <EditText
+                    android:id="@+id/phone"
+                    android:layout_width="240sp"
+                    android:layout_height="50sp"
+                    android:layout_weight="3"
+                    android:autofillHints=""
+                    android:layout_marginRight="10sp"
+                    android:ems="10"
+                    android:hint="@string/prompt_phone"
+                    android:textSize="25sp"
+                    android:inputType="phone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75sp">
+
+                <TextView
+                    android:id="@+id/emailLabel"
+                    android:layout_marginStart="10sp"
+                    android:layout_width="100sp"
+                    android:layout_height="50sp"
+                    android:text="@string/emailLabel"
+                    android:layout_weight="2"
+                    android:textColor="@color/logo_blue"
+                    android:textSize="25sp" />
+
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="240sp"
+                    android:layout_height="50sp"
+                    android:layout_weight="3"
+                    android:layout_marginRight="10sp"
+                    android:ems="10"
+                    android:hint="@string/prompt_email"
+                    android:textSize="25sp"
+                    android:inputType="textEmailAddress" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75sp">
+
+                <TextView
+                    android:id="@+id/consultant_doctor_label"
+                    android:layout_marginStart="10sp"
+                    android:layout_width="100sp"
+                    android:layout_height="50sp"
+                    android:layout_weight="2"
+                    android:text="@string/doctorLabel"
+                    android:textColor="@color/logo_blue"
+                    android:textSize="25sp" />
+
+                <Spinner
+                    android:id="@+id/consultant_doctor"
+                    android:layout_width="240sp"
+                    android:layout_height="50sp"
+                    android:layout_weight="3"
+                    android:ems="10"
+                    android:layout_marginRight="10sp"
+                    android:hint="@string/prompt_doctor"
+                    android:inputType="textEmailAddress" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100sp">
+
+                <TextView
+                    android:id="@+id/medicalHistoryLabel"
+                    android:layout_marginStart="10sp"
+                    android:layout_width="125sp"
+                    android:layout_height="match_parent"
+                    android:text="@string/medicalHistoryLabel"
+                    android:textColor="@color/logo_blue"
+                    android:layout_weight="2"
+                    android:textSize="25sp" />
+                <EditText
+                    android:id="@+id/medicalHistory"
+                    android:layout_width="240sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:ems="10"
+                    android:hint="@string/prompt_medical_history"
+                    android:layout_marginRight="10sp"
+                    android:inputType="textMultiLine"
+                    android:textSize="25sp"
+                    android:maxLines="5" />
+            </LinearLayout>
+             <Button
+                    android:id="@+id/button3"
+                    android:layout_width="200sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="100sp"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginBottom="50sp"
+                    android:background="@color/logo_blue"
+                    android:text="Register"
+                    android:textColor="@color/logo_white"
+                    android:textSize="25sp" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/progressBar3"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="200sp"
+        android:layout_height="200sp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="invisible"/>
+
+</RelativeLayout>
